@@ -3,6 +3,9 @@ function MockRequire() {
     (function (module) {
         var rL = module._load;
         module._load = function (request, parent, isMain) {
+            if (request.startsWith('/alloy')) {
+                request = request.substr(1);
+            }
             if(_hasMock(request)) {
                 console.info('\n[INFO] Require is returning a mock implementation for: ' + request);
                 return  _getMock(request);

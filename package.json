@@ -1,6 +1,6 @@
 {
   "name": "tiunit",
-  "version": "1.1.0",
+  "version": "1.1.0-mei",
   "description": "Real unit testing and mocking for Appcelerator Titanium",
   "main": "jsca.api.parser.js",
   "scripts": {
@@ -8,6 +8,8 @@
     "postinstall": "node ./tiunit-postinstall"
   },
   "repository": {
+    "type": "git",
+    "url": "git@github.com:mgm7734/ti-unit.git"
   },
   "keywords": [
     "titanium",
